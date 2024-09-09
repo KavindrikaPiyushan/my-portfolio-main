@@ -1,0 +1,164 @@
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: aliceblue;
+  border-radius: 5px;
+  gap: 10px;
+  background-color: #2d2d3a;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  width: 60%;
+}
+
+.project-number-outline {
+  font-family: "Fira Code", monospace;
+  font-size: 4rem;
+  color: transparent;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000,
+    2px -2px 0 #000; /* Creates the outlined effect */
+  margin-bottom: 20px;
+}
+
+.work-details h2 {
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.work-details p {
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.project-description {
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #aaaaaa;
+  text-align: justify;
+}
+
+.technologies {
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.work-links {
+  display: flex;
+  gap: 20px;
+}
+
+.work-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1b1c1e;
+  color: #00ff00;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.work-links a:hover {
+  background-color: #00ff00;
+  color: #1b1c1e;
+}
+
+.work-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.work-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-controls button {
+  background-color: #00ff00;
+  border: none;
+  color: #1b1c1e;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: #1b1c1e;
+  color: #00ff00;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: space-evenly;
+    padding: 0px;
+    margin-bottom: 5px;
+    gap: 10px;
+  }
+
+  .project-details {
+    padding: 0px 10px 10px 10px;
+    width: 100%;
+  }
+
+  .project-details h2 {
+    width: 100%;
+    font-family: "Fira Code", monospace;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+  }
+
+  .project-description {
+    width: 100%;
+    font-family: "Fira Code", monospace;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #aaaaaa;
+    text-align: justify;
+  }
+
+  .technologies {
+    font-family: "Fira Code", monospace;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  .work-image {
+    width: 100%;
+    padding: 5px;
+  }
+  .work-image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}

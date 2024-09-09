@@ -1,0 +1,849 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  background-color: #1b1c1e;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Global Styles */
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  color: white;
+  position: relative;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-links.open {
+  transform: translateX(0);
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ff00;
+  text-underline-offset: 6px;
+}
+
+.contact-button {
+  background-color: #00ff00;
+  color: #1b1c1e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  border: #00ff00 solid 2px;
+}
+
+.contact-button span {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background-color: transparent;
+  text-decoration: none;
+  border: #00ff00 solid 2px;
+}
+
+.contact-button:hover > span {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #00ff00;
+  text-underline-offset: 6px;
+}
+
+.contact-button.active {
+  background-color: transparent;
+  border: #00ff00 solid 2px;
+}
+
+.contact-button.active > span {
+  color: #00ff00;
+}
+
+/* Home */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  /* max-width: 1200px; */
+  margin: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: px;
+  margin-bottom: 40px;
+  height: 100%;
+}
+
+.header {
+  max-width: 600px;
+  flex: 1;
+}
+
+.brand {
+  font-size: 36px;
+  color: #00ff00;
+}
+
+.role {
+  font-size: 18px;
+  color: white;
+  font-family: "Fira Code", monospace;
+}
+
+.intro {
+  font-family: "Fira Code", monospace;
+  font-size: 48px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight {
+  color: #00ff00;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.description {
+  font-family: "Fira Code", monospace;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.download-cv {
+  font-family: "Fira Code", monospace;
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: #00ff00 solid 2px;
+}
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.social-links a:hover {
+  color: #00ff00;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image img {
+  border-radius: 100%;
+  border: 4px solid #00ff00;
+  width: 100%;
+  max-width: 450px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.stat-item h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profile-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .intro {
+    font-size: 36px;
+  }
+
+  .highlight {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .download-cv {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+  }
+}
+
+/* Resume */
+.resume-main-container {
+  text-align: start;
+}
+
+.section-title {
+  font-family: "Fira Code", monospace;
+  font-size: 2.5rem;
+  color: aliceblue;
+  margin-left: 50px;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 50px 0px;
+}
+
+.left-menu {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-menu button {
+  background-color: #1b1c1e;
+  border: 2px solid #00ff00;
+  color: aliceblue;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.left-menu button:hover,
+.left-menu button.active {
+  background-color: #00ff00;
+  color: #1b1c1e;
+}
+
+.right-content {
+  width: 70%;
+  padding-left: 20px;
+  font-family: "Fira Code", monospace;
+}
+
+/* Services */
+.service-main-container {
+  text-align: start;
+}
+
+.section-title {
+  font-family: "Fira Code", monospace;
+  font-size: 2.5rem;
+  color: aliceblue;
+  margin-left: 50px;
+}
+
+.services-container {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  gap: 40px;
+  padding: 50px;
+  height: 500px;
+  color: aliceblue;
+  overflow: hidden;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #1b1c1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 255, 153, 0.3);
+}
+
+.service-item:hover > .service-number,
+.service-item:hover > .service-content h2,
+.service-item:hover > .service-content p {
+  color: #00ff00;
+}
+
+.service-number {
+  font-family: "Fira Code", monospace;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.service-content h2 {
+  font-family: "Fira Code", monospace;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.service-content p {
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+  color: #aaaaaa;
+}
+
+.service-icon {
+  margin-left: auto;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #00ff00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+
+.service-icon.active {
+  background-color: #00ff00;
+  color: #1b1c1e;
+}
+
+.service-icon i {
+  color: inherit;
+}
+
+.service-icon:hover {
+  background-color: #1b1c1e;
+  color: #00ff00;
+  cursor: pointer;
+}
+
+/* Work */
+.work-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: aliceblue;
+  padding: 50px 0px;
+}
+
+.left-menu {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-menu button {
+  background-color: #1b1c1e;
+  border: 2px solid #00ff00;
+  color: aliceblue;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.left-menu button:hover,
+.left-menu button.active {
+  background-color: #00ff00;
+  color: #1b1c1e;
+}
+
+.right-content {
+  width: 70%;
+  padding-left: 20px;
+  font-family: "Fira Code", monospace;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.right-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.right-content::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  border-radius: 5px;
+}
+
+.right-content::-webkit-scrollbar-track {
+  background-color: #1b1c1e;
+}
+
+/* Contact Me */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  color: #f0f8ff;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-form h2 {
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  color: #aaaaaa;
+  text-align: Justify;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c2f33;
+  border: 1px solid #444;
+  color: #ffffff;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #00ff00;
+  border: none;
+  color: #1b1c1e;
+  padding: 10px 20px;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b1c1e;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+}
+
+.contact-info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 20px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.iconboxes {
+  background-color: #aaaaaa;
+  padding: 10px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  color: #00ff00;
+}
+
+.contact-info span {
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: #1b1c1e;
+    padding-top: 5rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links a {
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+  } /* Navbar */
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: #1b1c1e;
+    padding-top: 5rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links a {
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  /* Home Section */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .profile-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .intro {
+    font-size: 36px;
+  }
+
+  .highlight {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .download-cv {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+  }
+
+  /* Resume Section */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .section-title {
+    margin: 0;
+  }
+
+  .left-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+
+  .left-menu button {
+    width: 40%;
+    padding: 5px 8px;
+  }
+
+  /* .left-menu button:hover,
+  .left-menu button.active {
+    background-color: #00ff00;
+    color: #1b1c1e;
+    width: 40%;
+    padding: 5px 8px;
+  } */
+
+  .right-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .education-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .edu-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* Services Section */
+  .service-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-title {
+    margin-left: 0;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .service-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Work Section */
+  .work-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-menu {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-form h2 {
+    font-size: 1.7rem;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .iconboxes {
+    background-color: #aaaaaa;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .contact-info div span {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,130 @@
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.skill-item {
+  width: 100px; /* Adjust this based on your design */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.skill-item img {
+  width: 80%; /* Adjust to make images fit within the container */
+  height: auto;
+}
+
+/* Animation on hover */
+.skill-item:hover {
+  transform: scale(1.2); /* Scale the image */
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Assign different delays for each skill */
+.skill-item:nth-child(1) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.skill-item:nth-child(2) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.skill-item:nth-child(3) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.skill-item:nth-child(4) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+.skill-item:nth-child(5) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+.skill-item:nth-child(6) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.skill-item:nth-child(7) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.skill-item:nth-child(8) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.skill-item:nth-child(9) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.6s;
+}
+
+.skill-item:nth-child(10) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+.skill-item:nth-child(11) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.skill-item:nth-child(12) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 2.2s;
+}
+
+.skill-item:nth-child(13) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 2.4s;
+}
+
+.skill-item:nth-child(14) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 2.6s;
+}
+
+.skill-item:nth-child(15) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 2.8s;
+}
+
+.skill-item:nth-child(16) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.skill-item:nth-child(17) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 3.2s;
+}
+
+.skill-item:nth-child(18) {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 3.4s;
+}

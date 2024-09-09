@@ -1,0 +1,85 @@
+.education-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+
+  color: white;
+  gap: 10px;
+}
+
+.education-item {
+  border-radius: 5px;
+
+  display: flex;
+  padding: 20px 20px;
+  background-color: #2d2d3a;
+  justify-content: space-between; /* Align content between start and end */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+
+.education-container div img {
+  width: 120px; /* Reduced width */
+  height: 120px; /* Reduced height */
+}
+
+.uni-data {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+h1,
+h4,
+p {
+  color: aliceblue;
+  font-family: "Fira Code", monospace;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .education-item {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .uni-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .uni-data > h1 {
+    font-size: 1.2rem;
+  }
+
+  .uni-data > h4 {
+    font-size: 0.9rem;
+  }
+
+  .education-container div img {
+    width: 100px; /* Smaller image size for mobile */
+    height: 100px; /* Smaller image size for mobile */
+  }
+}
