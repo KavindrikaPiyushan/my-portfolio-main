@@ -7,22 +7,23 @@
 }
 
 .skill-item {
-  width: 100px; /* Adjust this based on your design */
+  width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
 }
 
 .skill-item img {
-  width: 80%; /* Adjust to make images fit within the container */
+  width: 80%;
   height: auto;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling transition for the image */
 }
 
-/* Animation on hover */
-.skill-item:hover {
-  transform: scale(1.2); /* Scale the image */
+/* Hover effect - simple scaling */
+.skill-item:hover img {
+  transform: scale(1.2); /* Scale up the image when hovered */
 }
 
 /* Floating animation */

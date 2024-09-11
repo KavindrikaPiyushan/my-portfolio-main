@@ -18,8 +18,8 @@ function App() {
       <Element name="services">
         <Services />
       </Element>
-      <Element name="resume">
-        <Resume />
+      <Element name="resume" className="">
+        <Resume  />
       </Element>
       <Element name="work">
         <Work />

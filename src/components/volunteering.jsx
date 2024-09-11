@@ -3,10 +3,10 @@ import "./education.css";
 
 function Education() {
   return (
-    <div className="education-container">
-      <div className="education-item">
-        <div className="uni-data">
-          <h1>Enigma 24</h1>
+    <div className="education-container ">
+      <div className="education-item mx-auto w-full">
+        <div className="uni-data mx-auto">
+          <h1 className=" text-[#00ff00] pb-2" >Enigma 24</h1>
           <h6>
             Department of Computer Science & Engineering, University of Moratuwa
             collaborated with SLT-Mobitel
@@ -14,9 +14,9 @@ function Education() {
           <p>Web Team Member</p>
         </div>
       </div>
-      <div className="education-item">
-        <div className="uni-data">
-          <h1>Mora UXplora 2.0</h1>
+      <div className="education-item mx-auto w-full ">
+        <div className="uni-data mx-auto">
+          <h1 className=" text-[#00ff00] pb-2">Mora UXplora 2.0</h1>
           <h6>
             Department of Computer Science & Engineering, University of Moratuwa
             collaborated with SLT-Mobitel
@@ -24,9 +24,9 @@ function Education() {
           <p>Web Team Member</p>
         </div>
       </div>
-      <div className="education-item">
-        <div className="uni-data">
-          <h1>SLIoT Challenge</h1>
+      <div className="education-item mx-auto  w-full">
+        <div className="uni-data mx-auto">
+          <h1 className=" text-[#00ff00] pb-2">SLIoT Challenge</h1>
           <h6>
             Department of Computer Science & Engineering, University of Moratuwa
             collaborated with SLT-Mobitel
@@ -34,16 +34,7 @@ function Education() {
           <p>Logistics Commitee Member</p>
         </div>
       </div>
-      <div className="education-item">
-        <div className="uni-data">
-          <h1>CSE Intreccio night</h1>
-          <h6>
-            Department of Computer Science & Engineering, University of Moratuwa
-            collaborated with WSO2
-          </h6>
-          <h6>Logistics Commitee Member</h6>
-        </div>
-      </div>
+    
     </div>
   );
 }

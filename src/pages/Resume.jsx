@@ -21,30 +21,33 @@ function Resume() {
   };
 
   return (
-    <div className="main-container">
+    <div className="main-container ">
       <h1 className="section-title">Resume</h1>
-      <div className="resume-container">
-        <div className="left-menu">
-          <button
-            onClick={() => setActiveSection("Skills")}
-            className={activeSection === "Skills" ? "active" : ""}
-          >
-            Skills
-          </button>
-          <button
-            onClick={() => setActiveSection("Education")}
-            className={activeSection === "Education" ? "active" : ""}
-          >
-            Education
-          </button>
-          <button
-            onClick={() => setActiveSection("Volunteering")}
-            className={activeSection === "Volunteering" ? "active" : ""}
-          >
-            Volunteering
-          </button>
+      <div className="resume-container  pt-0">
+        
+        <div className="w-[70%] ">
+         <h1 className="subTitle active w-[200px] mx-auto my-5 ">Skills</h1>
+          <div>
+          <Skills />
+          </div>
+        
+        
+        <div className=" ">
+         <h1 className="subTitle active w-[200px] mx-auto my-5 ">Education</h1>
+          <div>
+          <Education />
+          </div>
         </div>
-        <div className="right-content">{renderContent()}</div>
+
+        <div className=" ">
+         <h1 className="subTitle active w-[200px] mx-auto my-5 ">Volunteering</h1>
+          <div>
+          <Volunteering />
+          </div>
+        </div>
+        </div>
+        
+
       </div>
     </div>
   );

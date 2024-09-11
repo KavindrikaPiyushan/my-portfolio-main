@@ -1,16 +1,35 @@
 import React from "react";
+import { TypeAnimation } from 'react-type-animation';
 
 import profileImage from "../assets/me.jpeg";
 
 function Home() {
   return (
-    <div className="home-container ">
+    <div className="home-container 2xl:gap-[150px] ">
       <header className="header">
         <h1 className="intro ">
           <span>Hello I'm </span>
           <span className="highlight">Kavindrika Piyushan</span>
         </h1>
-        <h2 className="role">IT Undergraduate at University of Moratuwa</h2>
+        {/* <h2 className="role "  >IT Undergraduate at University of Moratuwa</h2> */}
+        <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'IT Undergraduate at University of Moratuwa',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'Full Stack Developer',
+        1000,
+        'UI/UX Designer',
+        1000,
+        'Sports Enthusiast',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '1.8em', display: 'inline-block' }}
+      repeat={Infinity}
+      className="role"
+    />
         <p className="description">
           Motivated IT undergraduate with a passion for learning and applying
           new technologies. Strong team player with leadership skills,
