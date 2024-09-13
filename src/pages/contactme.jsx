@@ -37,6 +37,13 @@ function Contact() {
         () => {
           console.log('SUCCESS!');
           toast.success('Message sent successfully');
+          setFormdata({
+            user_name:'',
+            user_email:'',
+            subject:'',
+            phone_number:'',
+            message:''
+          });
           form.current.reset();
           
         },

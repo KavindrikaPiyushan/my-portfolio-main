@@ -1,7 +1,8 @@
 import React from "react";
 import { TypeAnimation } from 'react-type-animation';
-import fileSaver from "file-saver";
+
 import profileImage from "../assets/me.jpeg";
+import { toast } from "react-toastify";
 
 function Home() {
   const handleDownload = () => {
