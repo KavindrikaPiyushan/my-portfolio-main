@@ -1,9 +1,29 @@
 import React from "react";
 import { TypeAnimation } from 'react-type-animation';
-
+import fileSaver from "file-saver";
 import profileImage from "../assets/me.jpeg";
 
 function Home() {
+  const handleDownload = () => {
+   
+    const filePath = '../assets/Kavindrika_Piyushan.pdf';
+    
+    
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.setAttribute('download', 'Kavindrika_Piyushan.pdf'); 
+
+    
+    document.body.appendChild(link);
+
+    
+    link.click();
+
+    
+    document.body.removeChild(link);
+  };
+
+
   return (
     <div className="home-container 2xl:gap-[150px] ">
       <header className="header">
@@ -38,7 +58,7 @@ function Home() {
           the field of Information Technology.
         </p>
         <div className="social-buttons">
-          <button className="download-cv">Download CV</button>
+          <button className="download-cv" onClick={handleDownload}  >Download CV</button>
           <div className="social-links">
             <a
               href="https://github.com/KavindrikaPiyushan"
