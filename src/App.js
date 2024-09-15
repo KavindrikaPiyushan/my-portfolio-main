@@ -7,10 +7,12 @@ import Services from "./pages/services";
 import Resume from "./pages/Resume";
 import Work from "./pages/work";
 import ContactMe from "./pages/contactme";
+import Achievements from "./pages/Achievements";
 
 function App() {
-  return (
-    <Router>
+  return ( 
+
+     <Router>
       <NavBar />
       <Element name="home">
         <Home />
@@ -24,10 +26,13 @@ function App() {
       <Element name="work">
         <Work />
       </Element>
+       <Achievements></Achievements>
       <Element name="contactme">
         <ContactMe />
       </Element>
-    </Router>
+    </Router> 
+   
+    
   );
 }
 

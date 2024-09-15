@@ -19,6 +19,7 @@
     "react-scroll": "^1.9.0",
     "react-toastify": "^10.0.5",
     "react-type-animation": "^3.2.0",
+    "swiper": "^11.1.14",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
