@@ -14,8 +14,9 @@ import TailwindImg from "../assets/tailwind.svg";
 
 function Projects() {
   return (
-    <div className="flex flex-col p-[50px] ">
-    <div className="grid grid-cols-3 justify-between ">
+    <div className="main-container flex flex-col  ">
+    <h1 className="section-title">Projects</h1>
+    <div className="grid grid-cols-4 justify-between p-[50px] pt-0">
 
       <ProjectCard
         image={mergex}
@@ -26,7 +27,7 @@ function Projects() {
       ></ProjectCard>
       <ProjectCard
         image={vertex}
-        description="MergeX is an innovative applicant tracking system (ATS) set to transform the recruitment landscape."
+        description="Vertex is a comprehensive web based platform designed for selling and managing video games."
         title="Vertex Game Store"
         techStack={[ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg]}
        

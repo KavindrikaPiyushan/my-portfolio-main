@@ -18,22 +18,25 @@ function App() {
       <Element name="home">
         <Home />
       </Element>
+      
       <Element name="services">
         <Services />
+      </Element>
+      <Element name="work">
+        <Project></Project>
       </Element>
       <Element name="resume" className="">
         <Resume  />
       </Element>
-      <Element name="work">
+      
+      {/* <Element name="work">
         <Work />
-      </Element>
+      </Element> */}
        <Achievements></Achievements>
       <Element name="contactme">
         <ContactMe />
       </Element>
-      <Element>
-        <Project></Project>
-      </Element>
+      
     </Router> 
    
     
