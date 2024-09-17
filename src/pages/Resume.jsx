@@ -40,7 +40,8 @@ function Resume() {
         </div>
 
         <div className=" ">
-         <h1 className="subTitle active w-[200px] mx-auto my-5 ">Volunteering</h1>
+         <h1 className="subTitle active w-[200px] mx-auto my-5 ">Extracurricular Activities
+</h1>
           <div>
           <Volunteering />
           </div>

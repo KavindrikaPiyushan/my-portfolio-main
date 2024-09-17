@@ -19,6 +19,9 @@ import vs from "../assets/VS.svg";
 import tensorflor from "../assets/TensorFlow.svg";
 import numpy from "../assets/NumPy.svg";
 import scikitlearn from "../assets/scikit-learn.svg";
+import tailwind from "../assets/tailwind.svg"
+import expressJs from "../assets/express.jpg"
+import java from "../assets/java.svg"
 
 function Skills() {
   return (
@@ -30,13 +33,16 @@ function Skills() {
         <img src={css} alt="css"></img>
       </div>
       <div className="skill-item">
-        <img src={js} alt="js"></img>
+        <img src={js} alt="js" className="rounded-lg"></img>
       </div>
       <div className="skill-item">
         <img src={git} alt="git"></img>
       </div>
       <div className="skill-item">
         <img src={nodejs} alt="nodejs"></img>
+      </div>
+      <div className="skill-item">
+        <img src={expressJs} alt="nodejs" className="rounded-lg"></img>
       </div>
       <div className="skill-item">
         <img src={react} alt="react"></img>
@@ -48,20 +54,23 @@ function Skills() {
         <img src={python} alt="python"></img>
       </div>
       <div className="skill-item">
-        <img src={pandas} alt="pandas"></img>
+        <img src={java} alt="python" className="rounded-lg"></img>
       </div>
       {/* <div className="skill-item">
-        <img src={tailwind} alt="tailwind"></img>
+        <img src={pandas} alt="pandas"></img>
       </div> */}
+      <div className="skill-item">
+        <img src={tailwind} alt="tailwind"></img>
+      </div>
       <div className="skill-item">
         <img src={vs} alt="VS Code"></img>
       </div>
-      <div className="skill-item">
+      {/* <div className="skill-item">
         <img src={docker} alt="docker"></img>
-      </div>
-      <div className="skill-item">
+      </div> */}
+      {/* <div className="skill-item">
         <img src={flutter} alt="flutter"></img>
-      </div>
+      </div> */}
       <div className="skill-item">
         <img src={boostrap} alt="boostrap"></img>
       </div>
@@ -71,15 +80,15 @@ function Skills() {
       <div className="skill-item">
         <img src={Figma} alt="figma"></img>
       </div>
-      <div className="skill-item">
+      {/* <div className="skill-item">
         <img src={tensorflor} alt="tensorflor"></img>
-      </div>
-      <div className="skill-item">
+      </div> */}
+      {/* <div className="skill-item">
         <img src={numpy} alt="numpy"></img>
-      </div>
-      <div className="skill-item">
+      </div> */}
+      {/* <div className="skill-item">
         <img src={scikitlearn} alt="scikitlearn"></img>
-      </div>
+      </div> */}
     </div>
   );
 }

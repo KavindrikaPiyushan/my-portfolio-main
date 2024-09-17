@@ -8,6 +8,7 @@ import Resume from "./pages/Resume";
 import Work from "./pages/work";
 import ContactMe from "./pages/contactme";
 import Achievements from "./pages/Achievements";
+import Project from "./pages/Projects";
 
 function App() {
   return ( 
@@ -29,6 +30,9 @@ function App() {
        <Achievements></Achievements>
       <Element name="contactme">
         <ContactMe />
+      </Element>
+      <Element>
+        <Project></Project>
       </Element>
     </Router> 
    

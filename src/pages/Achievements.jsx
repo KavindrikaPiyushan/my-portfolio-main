@@ -32,8 +32,8 @@ const images = [
 
 function Achievements() {
   return (
-    <div className="container">
-      <h1 className="heading">Gallery</h1>
+    <div className="container px-0 ">
+    <h1 className="section-title ">Myself</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -58,21 +58,21 @@ function Achievements() {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        className="swiper_container"
+        className="swiper_container  "
       >
         {images.map((image, index) => (
           <SwiperSlide key={index} className='slide'>
             <img src={image} alt={`slide_image_${index + 1}`} />
           </SwiperSlide>
         ))}
-        <div className="slider-controler">
+        <div className="slider-controler ">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
           <div className="swiper-button-next slider-arrow">
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
-          <div className="swiper-pagination"></div>
+          <div className="swiper-pagination hidden"></div>
         </div>
       </Swiper>
     </div>
