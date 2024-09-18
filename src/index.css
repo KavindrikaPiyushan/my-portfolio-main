@@ -698,7 +698,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 20px; 
   }
 
   .profile-image {
@@ -707,7 +707,7 @@ button:hover {
   }
 
   .header {
-    max-width: 100%;
+
   }
 
   .intro {

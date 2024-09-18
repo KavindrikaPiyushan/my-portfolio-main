@@ -4,7 +4,7 @@ import './ProjectCard.css'; // Import custom CSS for keyframes
 function ProjectCard(Props) {
   return (
     <div className='group p-2 p-0 neon-border m-auto my-2 hover:my-0'>
-    <div className="relative flex flex-col my-1 bg-[#1c1d1f] shadow-[0_10px_20px_rgba(0,0,0,0.6),_0_6px_6px_rgba(0,0,0,0.3)] rounded-lg w-[300px] transform transition-transform duration-300 group-hover:scale-105">
+    <div className="relative flex flex-col my-1 bg-[#1c1d1f] shadow-[0_10px_20px_rgba(0,0,0,0.6),_0_6px_6px_rgba(0,0,0,0.3)] rounded-lg w-[300px] h-[468px] transform transition-transform duration-300 group-hover:scale-105">
       <div className="relative h-56 m-2.5 mb-[0] overflow-hidden text-white rounded-md">
         <img src={Props.image} alt="card-image" className="rounded-md h-full w-full" />
       </div>

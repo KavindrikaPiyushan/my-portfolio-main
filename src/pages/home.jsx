@@ -27,7 +27,7 @@ function Home() {
 
   return (
     <div className="home-container 2xl:gap-[150px] ">
-      <header className="header">
+      <header className="header ">
         <h1 className="intro ">
           <span>Hello I'm </span>
           <span className="highlight">Kavindrika Piyushan</span>
@@ -87,7 +87,7 @@ function Home() {
         </div>
       </header>
       <div className="profile-image flex items-center justify-center text-center">
-        <img src={profileImage} alt="Kavindrika Piyushan" />
+        <img src={profileImage} alt="Kavindrika Piyushan" className="2xl:ml-10"/>
       </div>
     </div>
   );
