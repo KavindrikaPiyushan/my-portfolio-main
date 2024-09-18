@@ -43,7 +43,7 @@ function Projects() {
       ></ProjectCard>
        <ProjectCard
         image={RevoClean}
-        description="RevoClean is a automated waste water purification unit."
+        description="RevoClean is an automated wastewater purification unit, a hardware project that uses the ESP32-E."
         title="RevoClean"
         techStack={[ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg]}
        
