@@ -479,7 +479,6 @@ body {
   border: 2px solid #00ff00;
   text-align: center;
   padding: 10px 20px;
-  cursor: pointer;
   font-family: "Fira Code", monospace;
   font-size: 1rem;
   transition: background-color 0.3s ease;

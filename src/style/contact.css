@@ -1,0 +1,44 @@
+/* contact.css */
+
+/* Define the floating animation */
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply floating animation to each section */
+  .contact-form, .contact-info > div {
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Stagger the floating animation */
+  .contact-form {
+    animation-delay: 0s;
+  }
+  
+  .contact-info > div:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .contact-info > div:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .contact-info > div:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  /* Hover effect */
+  .contact-form:hover, .contact-info > div:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
