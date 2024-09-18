@@ -221,7 +221,7 @@ body {
   border: 4px solid #00ff00;
   width: 100%;
   max-width: 450px;
-  animation: slideInFromRight 1.1s ease-out; 
+  animation: slideInFromRight 1.1s ease-out;
 }
 @keyframes slideInFromRight {
   0% {
@@ -231,6 +231,21 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+.section-title,.subTitle{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

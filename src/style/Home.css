@@ -1,0 +1,75 @@
+
+  
+  .TextedArea {
+    animation: ContentslideInFromRight 1.1s ease-out,fadeIn 1.8s ease-in;;
+  }
+
+  .intro, .role, .description, .social-buttons, .profile-image {
+    animation: wave 3s ease-in-out infinite;
+  }
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+      
+    }
+    50% {
+      transform: translateY(-20px);
+      
+    }
+  }
+
+  .profile-image {
+    animation: wave 3s ease-in-out infinite , changeOpacity 3s ease-in-out infinite;
+  }
+
+  @keyframes changeOpacity {
+    0%, 100% {
+   
+      opacity: 1;
+    }
+    50% {
+      
+      opacity: 0.6;
+    }
+  }
+
+  /* .profile-image {
+    margin-top: 20px;
+    animation: slideInFromRight 1.1s ease-out, float 3s ease-in-out 1.1s infinite;
+  } */
+  
+  @keyframes ContentslideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+  

@@ -3,6 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 import profileImage from "../assets/me.jpeg";
 import { toast } from "react-toastify";
+import '../style/Home.css'
 
 function Home() {
   const handleDownload = () => {
@@ -27,7 +28,7 @@ function Home() {
 
   return (
     <div className="home-container 2xl:gap-[150px] ">
-      <header className="header ">
+      <header className="header TextedArea">
         <h1 className="intro ">
           <span>Hello I'm </span>
           <span className="highlight">Kavindrika Piyushan</span>
