@@ -66,8 +66,8 @@ function Contact() {
 
 
   return (
-    <div className="contact-container">
-      <div className="contact-form">
+    <div className="contact-container ">
+      <div className="contact-form  rounded-lg">
         <h2 className='contactTitle' >Let's work together</h2>
         <p className='contactme'>
           Whether you need a website, mobile app, or a striking design, I'm
@@ -77,20 +77,20 @@ function Contact() {
         </p>
        <form ref={form} onSubmit={sendEmail}>
           <div className="form-row">
-            <input className='username' type="text" name="user_name" placeholder="Your Name" onChange={handleChange} />
-            <input className='useremail' type="email" name="user_email" placeholder="Your Email" onChange={handleChange} />
+            <input className='username rounded-lg' type="text" name="user_name" placeholder="Your Name" onChange={handleChange} />
+            <input className='useremail rounded-lg' type="email" name="user_email" placeholder="Your Email" onChange={handleChange} />
           </div>
           <div className="form-row">
-            <input className='subject' type="text" name="subject" placeholder="Subject" onChange={handleChange} />
-            <input className='phonenumber' type="text" name="phone_number" placeholder="Phone Number" onChange={handleChange} />
+            <input className='subject rounded-lg' type="text" name="subject" placeholder="Subject" onChange={handleChange} />
+            <input className='phonenumber rounded-lg' type="text" name="phone_number" placeholder="Phone Number" onChange={handleChange} />
           </div>
           <textarea
             name="message"
             placeholder="Type your message here."
             onChange={handleChange}
-            className='message'
+            className='message rounded-lg'
           ></textarea>
-          <button name="submit" class="pageclip-form__submit" className='send' type="submit">
+          <button name="submit" class="pageclip-form__submit" className='send rounded-lg ' type="submit">
             Send message
           </button>
         </form>

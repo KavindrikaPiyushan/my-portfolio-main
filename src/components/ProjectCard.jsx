@@ -22,7 +22,7 @@ function ProjectCard(Props) {
           {Props.description}
         </p>
       </div>
-      <div className="group my-1 inline-flex flex-wrap justify-center items-center gap-2">
+      <div className="group my-2 inline-flex flex-wrap justify-center items-center gap-2">
         {Props.techStack.map((tech, index) => (
           <div key={index} className="bg-transparent rounded-full border-2 p-1 text-center transition-all shadow-lg hover:shadow-xl">
             <img src={tech} alt="" className="w-8 h-8 rounded-full" />

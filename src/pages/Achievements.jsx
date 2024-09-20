@@ -20,14 +20,36 @@ import E from '../assets/achievements/e.jpg';
 import F from '../assets/achievements/f.jpg';
 import G from '../assets/achievements/g.jpg';
 import H from '../assets/achievements/h.jpg';
-import I from '../assets/achievements/i.jpg';
+import I from '../assets/achievements/i.jpeg';
 import J from '../assets/achievements/j.jpg';
 import K from '../assets/achievements/k.jpeg';
 import L from '../assets/achievements/l.jpeg';
 import M from '../assets/achievements/m.jpeg';
+import N from '../assets/achievements/n.jpeg';
+import O from '../assets/achievements/o.jpeg';
+import P from '../assets/achievements/p.jpg';
+import Q from '../assets/achievements/q.jpg';
+import R from '../assets/achievements/r.jpg';
+import S from '../assets/achievements/s.jpg';
+import T from '../assets/achievements/t.jpeg';
+import U from '../assets/achievements/u.jpeg';
+import V from '../assets/achievements/v.jpeg';
+import W from '../assets/achievements/w.jpeg';
+import X from '../assets/achievements/x.jpeg';
+import Y from '../assets/achievements/y.jpg';
+import Z from '../assets/achievements/z.jpg';
+import A1 from '../assets/achievements/a1.jpeg';
+import B1 from '../assets/achievements/b1.jpg';
+import C1 from '../assets/achievements/c1.jpg';
+import D1 from '../assets/achievements/d1.jpeg';
+import E1 from '../assets/achievements/e1.jpeg';
+import F1 from '../assets/achievements/f1.jpeg';
+import G1 from '../assets/achievements/g1.jpg';
+import H1 from '../assets/achievements/h1.jpg';
+
 
 const images = [
-  A, B, C, D, E, F, G, H, I, J, K, L, M
+  G,L,A,J,   H,S,F,Q,T,W, D,B,F1,B1, C,G, E,    K, M, N,C1, O,  U, R,I,Y,P,    V,  X,  Z, A1, C1, D1, E1, F1, G1, H1
 ];
 
 function Achievements() {

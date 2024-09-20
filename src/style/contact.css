@@ -36,9 +36,7 @@
     animation-delay: 1.5s;
   }
   
-  /* Hover effect */
-  .contact-form:hover, .contact-info > div:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+
+
+  
   
