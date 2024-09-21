@@ -14,6 +14,7 @@ import TailwindImg from "../assets/tailwind.svg";
 import '../style/Projects.css'
 
 
+
 function Projects() {
   const projects = [
     {
@@ -21,24 +22,28 @@ function Projects() {
       description: "MergeX is an innovative applicant tracking system (ATS) set to transform the recruitment landscape.",
       title: "MergeX",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
+      link:'https://github.com/KavindrikaPiyushan/Mergex-ATS'
     },
     {
       image: vertex, // Corrected syntax
       description: "Vertex is a comprehensive web-based platform designed for selling and managing video games.",
       title: "Vertex Game Store",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
+      link:'https://github.com/KavindrikaPiyushan/Game-Store-MERN-ITP-main--1-'
     },
     {
       image: pramuka, // Corrected syntax
       description: "An E-commerce website with stock management, order tracking, cart, and online payment capabilities.",
       title: "Pramuka Store",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
+      link:'https://github.com/LakshanKavindu/Pramuka-Ecom'
     },
     {
       image: RevoClean, // Corrected syntax
       description: "RevoClean is an automated wastewater purification unit, a hardware project that uses the ESP32-E.",
       title: "RevoClean",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
+      link:'https://github.com/KavindrikaPiyushan/Hardware_Project-main'
     },
     // Add more project objects here...
   ];
@@ -86,6 +91,7 @@ function Projects() {
             title={project.title}
             techStack={project.techStack}
             delay={index * 0.4} // Calculate delay dynamically
+            link={project.link}
           />
         ))}
 

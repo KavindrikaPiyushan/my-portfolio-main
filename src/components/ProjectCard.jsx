@@ -1,5 +1,6 @@
 import React from 'react';
-import './ProjectCard.css'; // Import custom CSS for keyframes
+import './ProjectCard.css'; 
+import {Link} from 'react-router-dom'// Import custom CSS for keyframes
 
 function ProjectCard(Props) {
   return (
@@ -30,9 +31,10 @@ function ProjectCard(Props) {
         ))}
       </div>
       <div className="px-3 pb-4 pt-0 mt-2">
-        <div className="bg-[#1b1c1e] text-[#00ff00] border-2 text-center border-[#1a1a1a] hover:border-[#00ff00] w-full rounded-md bg-[#1a1a1a] py-1 px-4 text-sm text-white transition-all shadow-lg hover:shadow-2xl hover:bg-slate-700">
+     <Link to={Props.link}>   <div  className="bg-[#1b1c1e] text-[#00ff00] border-2 text-center border-[#1a1a1a] hover:border-[#00ff00] w-full rounded-md bg-[#1a1a1a] py-1 px-4 text-sm text-white transition-all shadow-lg hover:shadow-2xl hover:bg-slate-700">
           View
         </div>
+        </Link>
       </div>
     </div>
     </div>

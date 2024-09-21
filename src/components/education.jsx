@@ -9,7 +9,7 @@ function Education() {
       <div className="education-item   bg-[#1c1d1f] ">
         <div className="uni-data ">
           <h1 className=" text-[#00ff00] pb-2">University of Moratuwa</h1>
-          <h6>Bachelor of Science in Computer Science and Engineering</h6>
+          <h6>Bachelor of Science Honours in Information Technology </h6>
           <p>2022 - 2026</p>
         </div>
         <div className="edu-img-container">
