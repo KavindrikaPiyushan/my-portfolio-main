@@ -1,9 +1,5 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import mergex from "../assets/projects/mergex.png";
-import vertex from "../assets/projects/Vertex.png";
-import pramuka from "../assets/projects/PramukaStore.jpg";
-import RevoClean from "../assets/projects/RevoClean.jpg"
 import ReactLImg from "../assets/react.svg";
 import CSSImg from "../assets/CSS3.svg";
 import HTMLImg from "../assets/HTML5.svg";
@@ -18,28 +14,28 @@ import '../style/Projects.css'
 function Projects() {
   const projects = [
     {
-      image: mergex, // Corrected syntax
+      image: 'https://firebasestorage.googleapis.com/v0/b/portofolio-ee5de.appspot.com/o/mergex.png?alt=media&token=45c2c157-c914-41c4-90a5-e2eef77537aa', // Corrected syntax
       description: "MergeX is an innovative applicant tracking system (ATS) set to transform the recruitment landscape.",
       title: "MergeX",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
       link:'https://github.com/KavindrikaPiyushan/Mergex-ATS'
     },
     {
-      image: vertex, // Corrected syntax
+      image: 'https://firebasestorage.googleapis.com/v0/b/portofolio-ee5de.appspot.com/o/Vertex.webp?alt=media&token=45134659-ba2b-4fdc-8071-5e9fbd8993fd', // Corrected syntax
       description: "Vertex is a comprehensive web-based platform designed for selling and managing video games.",
       title: "Vertex Game Store",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
       link:'https://github.com/KavindrikaPiyushan/Game-Store-MERN-ITP-main--1-'
     },
     {
-      image: pramuka, // Corrected syntax
+      image: 'https://firebasestorage.googleapis.com/v0/b/portofolio-ee5de.appspot.com/o/PramukaStore.jpg?alt=media&token=71a7753d-ab08-4818-b698-1acce9695590', // Corrected syntax
       description: "An E-commerce website with stock management, order tracking, cart, and online payment capabilities.",
       title: "Pramuka Store",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
       link:'https://github.com/LakshanKavindu/Pramuka-Ecom'
     },
     {
-      image: RevoClean, // Corrected syntax
+      image: 'https://firebasestorage.googleapis.com/v0/b/portofolio-ee5de.appspot.com/o/RevoClean.jpg?alt=media&token=2372fe6c-5b18-450c-945d-d7edde6192ef', // Corrected syntax
       description: "RevoClean is an automated wastewater purification unit, a hardware project that uses the ESP32-E.",
       title: "RevoClean",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
