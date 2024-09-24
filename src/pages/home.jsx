@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import { toast } from "react-toastify";
+import me from '../assets/me.webp'
 import '../style/Home.css'
 
 function Home() {
@@ -86,7 +87,7 @@ function Home() {
         </div>
       </header>
       <div className="profile-image flex items-center justify-center text-center">
-        <img src='https://firebasestorage.googleapis.com/v0/b/portofolio-ee5de.appspot.com/o/me.webp?alt=media&token=8b52213e-70d5-46ae-b77a-461362bd88b2' alt="Kavindrika Piyushan" className="2xl:ml-10"/>
+        <img src={me} alt="Kavindrika Piyushan" className="2xl:ml-10"/>
       </div>
     </div>
   );
