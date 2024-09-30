@@ -18,7 +18,7 @@ function Projects() {
       description: "MergeX is an innovative applicant tracking system (ATS) set to transform the recruitment landscape.",
       title: "MergeX",
       techStack: [ReactLImg, NodeImg, ExpressImg, MongoDBImg, TailwindImg],
-      link:'https://github.com/KavindrikaPiyushan/Mergex-ATS'
+      link:'https://github.com/Tharindu-Dilshan-Ekanayake/ATS-MergeX--Application-Tracking-System-'
     },
     {
       image: 'https://firebasestorage.googleapis.com/v0/b/portofolio-ee5de.appspot.com/o/Vertex.webp?alt=media&token=45134659-ba2b-4fdc-8071-5e9fbd8993fd', // Corrected syntax
