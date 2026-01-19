@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kavindrika Piyushan — Portfolio
 
-## Available Scripts
+Responsive single-page portfolio built with React 18, Tailwind CSS utilities, and custom CSS. It showcases professional summary, services, featured projects, resume highlights, achievements, and a contact form powered by EmailJS.
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+## Features
+- Hero with typewriter intro, social links, and CV download
+- Services and skills sections with icon grid
+- Projects grid using reusable `ProjectCard` components and hosted images
+- Resume section covering skills, education, and extracurricular activities
+- Achievements strip and contact form with email delivery (EmailJS) and toast notifications
+- Smooth scrolling navigation (react-scroll) and responsive styling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+- React 18 (Create React App)
+- Tailwind CSS utilities + custom CSS modules
+- EmailJS for contact form delivery
+- React Toastify for notifications
+- Font Awesome / React Icons for iconography
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
+Prerequisites: Node.js 18+ and npm.
 
-### `npm test`
+```bash
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app runs at http://localhost:3000 with hot reload enabled.
 
-### `npm run build`
+### Scripts
+- `npm start` — run locally in development mode
+- `npm run build` — production build to `build/`
+- `npm test` — CRA test runner (Jest + Testing Library)
+- `npm run eject` — expose CRA config (irreversible)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Environment / Configuration
+EmailJS is used in the contact form (`src/pages/contactme.jsx`). For production, supply your own keys via env or config and avoid committing secrets. The placeholders in the code are:
+- `service_dbgi3xa` (service ID)
+- `template_rowivfq` (template ID)
+- `publicKey` (`WKPKSy43zkRoGBuKU` in code)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you rotate these, update the component accordingly or load them from environment variables.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
+```
+public/
+	index.html
+	assets/            # static assets
+src/
+	index.js           # app bootstrap
+	App.js             # routes + section anchors
+	components/        # navbar, project cards, skills, education, volunteering
+	pages/             # home, services, projects, resume, contact, achievements, work
+	style/             # section-specific CSS
+	assets/            # logos, illustrations, PDFs
+```
 
-### `npm run eject`
+## Deployment
+- Build: `npm run build`
+- Netlify/Vercel: point to `npm run build`; publish directory `build/`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+MIT — see [LICENSE](LICENSE).
