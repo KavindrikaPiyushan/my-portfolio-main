@@ -5,7 +5,6 @@ import { Element } from "react-scroll";
 import Home from "./pages/home";
 import Services from "./pages/services";
 import Resume from "./pages/Resume";
-import Work from "./pages/work";
 import ContactMe from "./pages/contactme";
 import Achievements from "./pages/Achievements";
 import Project from "./pages/Projects";

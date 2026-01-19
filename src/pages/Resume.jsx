@@ -1,25 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Skills from "../components/skills";
 // import "./Resume.css";
 import Education from "../components/education";
 import Volunteering from "../components/volunteering";
 
 function Resume() {
-  const [activeSection, setActiveSection] = useState("Skills");
-
-  const renderContent = () => {
-    switch (activeSection) {
-      case "Skills":
-        return <Skills />;
-      case "Education":
-        return <Education />;
-      case "Volunteering":
-        return <Volunteering />;
-      default:
-        return <Skills />;
-    }
-  };
-
   return (
     <div className="main-container ">
       <h1 className="section-title">Resume</h1>

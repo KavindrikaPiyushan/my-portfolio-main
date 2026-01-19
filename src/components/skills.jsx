@@ -9,16 +9,10 @@ import js from "../assets/JavaScript.svg";
 import react from "../assets/react.svg";
 import mysql from "../assets/mysql.png";
 import nodejs from "../assets/node.svg";
-import flutter from "../assets/Flutter.svg";
 import mongodb from "../assets/Mongodb.svg";
 import boostrap from "../assets/Bootstrap.svg";
-import docker from "../assets/Docker.svg";
 import Figma from "../assets/Figma.svg";
-import pandas from "../assets/Pandas.svg";
 import vs from "../assets/VS.svg";
-import tensorflor from "../assets/TensorFlow.svg";
-import numpy from "../assets/NumPy.svg";
-import scikitlearn from "../assets/scikit-learn.svg";
 import tailwind from "../assets/tailwind.svg"
 import expressJs from "../assets/express.jpg"
 import java from "../assets/java.svg"

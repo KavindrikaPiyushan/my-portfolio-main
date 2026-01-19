@@ -1,6 +1,5 @@
 import React from "react";
 import { TypeAnimation } from 'react-type-animation';
-import { toast } from "react-toastify";
 import me from '../assets/me.webp'
 import '../style/Home.css'
 
